@@ -1,4 +1,4 @@
-name: CI/CD Pipeline
+name: New  CI/CD Pipeline
 
 on:
   workflow_dispatch:
@@ -42,4 +42,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: ${{ secrets.DOCKER_USER }}/my-java-app:v${{ inputs.majorversion }}.${{ inputs.minorversion }}.${{  github.run_number }}
+        tags: ${{ secrets.DOCKER_USER }}/my-java-apptest:v${{ inputs.majorversion }}.${{ inputs.minorversion }}.${{  github.run_number }}
